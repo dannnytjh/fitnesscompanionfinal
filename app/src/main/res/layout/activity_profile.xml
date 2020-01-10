@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDashboardDark"
+    tools:context="fitnesscompanion.com.View.Profile.ProfileActivity">
+
+    <fitnesscompanion.com.Util.CircleImageView
+        android:layout_margin="20dp"
+        android:id="@+id/imageProfile"
+        android:onClick="onEdit"
+        android:clickable="true"
+        android:layout_gravity="center"
+        android:src="@drawable/logo_drawer"
+        android:layout_width="120dp"
+        android:layout_height="120dp" />
+
+    <TableLayout
+        android:stretchColumns="*"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow>
+            <TextView
+                android:text="@string/personalInfo"
+                android:layout_span="3"
+                android:textStyle="bold"
+                android:textSize="12pt"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+        <TableRow>
+            <View
+                android:layout_span="3"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="?android:attr/listDivider"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:text="@string/nickName"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/txtName"
+                android:textColor="@color/white"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageButton
+                android:id="@+id/btnName"
+                android:onClick="onEdit"
+
+                android:clickable="true"
+                android:src="@drawable/ic_edit"
+                android:layout_gravity="right|center_vertical"
+                android:background="@null"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:text="@string/gender"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/txtGender"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageButton
+                android:id="@+id/btnGender"
+                android:onClick="onEdit"
+                android:clickable="true"
+                android:src="@drawable/ic_edit"
+                android:layout_gravity="right|center_vertical"
+                android:background="@null"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:text="@string/dob"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/txtDob"
+                android:textColor="@color/white"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+           <!-- <ImageButton
+                android:id="@+id/btnDob"
+                android:onClick="onEdit"
+                android:clickable="true"
+                android:src="@drawable/ic_edit"
+                android:layout_gravity="right|center_vertical"
+                android:background="@null"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />-->
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:text="@string/age"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/txtAge"
+                android:textColor="@color/white"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+    <TableRow>
+
+            <TextView
+                android:text="@string/address"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        <TextView
+            android:id="@+id/txtAddress"
+            android:textColor="@color/white"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageButton
+            android:id="@+id/btnAddress"
+            android:onClick="onEdit"
+            android:clickable="true"
+            android:src="@drawable/ic_edit"
+            android:layout_gravity="right|center_vertical"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </TableRow>
+        <TableRow>
+            <TextView
+                android:text="@string/contactInfo"
+                android:layout_span="3"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="12pt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+        <TableRow>
+            <View
+                android:layout_span="3"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="?android:attr/listDivider"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:text="@string/email"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/txtEmail"
+                android:textColor="@color/white"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="@string/healthInfo"
+                android:layout_span="3"
+                android:textStyle="bold"
+                android:textSize="12pt"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+        <TableRow>
+            <View
+                android:layout_span="3"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="?android:attr/listDivider"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:text="@string/height"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/txtHeight"
+                android:textColor="@color/white"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageButton
+                android:id="@+id/btnHeight"
+                android:onClick="onEdit"
+                android:clickable="true"
+                android:src="@drawable/ic_edit"
+                android:layout_gravity="right|center_vertical"
+                android:background="@null"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:text="@string/weight"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/txtWeight"
+                android:textColor="@color/white"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageButton
+                android:id="@+id/btnWeight"
+                android:onClick="onEdit"
+                android:clickable="true"
+                android:src="@drawable/ic_edit"
+                android:layout_gravity="right|center_vertical"
+                android:background="@null"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:text="@string/bmi"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/txtBmi"
+                android:textColor="@color/white"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </TableRow>
+
+    </TableLayout>
+
+
+
+</LinearLayout>

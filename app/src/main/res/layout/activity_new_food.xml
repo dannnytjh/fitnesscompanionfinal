@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorDashboardDark"
+    tools:context="fitnesscompanion.com.View.Food.NewFoodActivity">
+
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView"
+                app:srcCompat="@drawable/ic_restaurant_menu_black_24dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp" />
+
+            <TextView
+                android:textSize="8pt"
+                android:textStyle="bold"
+                android:id="@+id/txtName"
+                android:layout_marginLeft="20dp"
+                android:text="apple"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_alignParentLeft="true"
+                    android:text="Portion"
+                    android:textStyle="bold|italic"
+                    android:textSize="8pt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txtNum"
+                    android:layout_alignParentRight="true"
+                    android:text="1"
+                    android:textStyle="bold|italic"
+                    android:textSize="8pt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginRight="10dp"
+                    android:text="When"
+                    android:textStyle="bold"
+                    android:textSize="8pt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Spinner
+                    android:entries="@array/dietOption"
+                    android:id="@+id/spinner"
+                    android:spinnerMode="dialog"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+                <TextView
+                    android:textSize="12pt"
+                    android:text="Calories"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textSize="12pt"
+                    android:text=" : "
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txtCalories"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="120 cal"
+                    android:textColor="@color/white"
+                    android:textSize="12pt"
+                    android:textStyle="italic" />
+
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:textSize="12pt"
+                    android:text="Protein"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textSize="12pt"
+                    android:text=" : "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txtProtein"
+                    android:textSize="12pt"
+                    android:text="120 g"
+                    android:textColor="@color/white"
+                    android:textStyle="italic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:textSize="12pt"
+                    android:text="Fat"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textSize="12pt"
+                    android:text=" : "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txtFat"
+                    android:textSize="12pt"
+                    android:text="120 g"
+                    android:textColor="@color/white"
+                    android:textStyle="italic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:textSize="12pt"
+                    android:text="Carbohydrate"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textSize="12pt"
+                    android:text=" : "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/txtCarbohydrate"
+                    android:textSize="12pt"
+                    android:text="120 g"
+                    android:textColor="@color/white"
+                    android:textStyle="italic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+        </TableLayout>
+
+        <Button
+            android:onClick="onClick"
+            android:id="@+id/btnAdd"
+            android:layout_marginTop="20dp"
+            android:text="Add Diet"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

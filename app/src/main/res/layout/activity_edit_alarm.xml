@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorDashboardDark">
+
+    <ScrollView
+        android:layout_height="0dp"
+        android:layout_width="fill_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:padding="8sp"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/widget"
+                android:textColor="@color/white"
+                android:text="Title" />
+
+            <EditText
+                style="@style/widget"
+                android:textColor="@color/black"
+                android:id="@+id/title"
+                android:singleLine="true" />
+
+            <LinearLayout
+                android:paddingTop="8sp"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/alarm_checkbox"
+                    android:layout_weight="1"
+                    android:layout_width="0sp"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    android:text="Alarm" />
+
+                <Spinner
+                    android:id="@+id/occurence_spinner"
+                    android:layout_weight="1"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:spinnerMode="dropdown"
+                    android:entries="@array/occurence" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingTop="8sp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/date_button"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/roundcorner"
+                    android:onClick="onDateClick" />
+
+                <Button
+                    android:id="@+id/time_button"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/roundcorner"
+                    android:onClick="onTimeClick" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="8sp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/done"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/roundcorner"
+                android:onClick="onDoneClick"
+                android:text="Done" />
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundcorner"
+                android:onClick="onCancelClick"
+                android:text="Cancel" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
+

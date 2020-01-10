@@ -1,0 +1,310 @@
+<resources>
+    <string name="app_name">Fitness\nCompanion</string>
+    <!--<string name="server_url">http://3c8ebd8a.ap.ngrok.io/FitnessCompanion/ServerRequest/</string>-->
+
+    <!--<string name="server_url">http://790ed3e8.ap.ngrok.io/PhpProject1/Control/Trainee/</string>-->
+    <!--<string name="server_url">http://i2hub.tarc.edu.my:8886/FitnessWebServices/Control/Trainee/</string>-->
+    <string name="server_url">http://i2hub.tarc.edu.my:8886/FitnessCompanion/Control/Trainee/</string>
+
+    <!-- Menu Title-->
+
+    <string name="title_activity">Activity</string>
+    <string name="title_home">Dashboard</string>
+    <string name="title_food">Food</string>
+    <string name="title_profile">Profile</string>
+
+    <!-- Floating Action Menu Title-->
+    <string name="fab_addFood">Add New Food</string>
+    <string name="fab_barcode">Barcode Scanner</string>
+    <string name="fab_nearBy">Near By Restaurant</string>
+    <string name="fab_searchFood">Search Food</string>
+
+    <!-- Common Word -->
+    <string name="retry">Retry</string>
+    <string name="email">Email</string>
+    <string name="pass">Password</string>
+    <string name="forgetPass"><i><u>Forget Password</u></i></string>
+    <string name="signUp"><i><u>Sign Up</u></i></string>
+    <string name="signIn">Sign In</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="nickName">Nickname</string>
+    <string name="passConfirm">Confirm Password</string>
+    <string name="dob">Date of Birth</string>
+    <string name="clear">Clear</string>
+    <string name="addPhoto"><b>Choose an action</b></string>
+    <string name="action">Action</string>
+    <string name="passRecovery">Password Recovery</string>
+    <string name="recovery">Recovery</string>
+    <string name="cancel">Cancel</string>
+    <string name="suggestDuration">Suggest Duration(Minutes)</string>
+    <string name="caloriesBurn">Calories burn per minutes</string>
+    <string name="maxHR">Maximum Heart Rate</string>
+    <string name="common">Common</string>
+    <string name="favourite">Favourite</string>
+    <string name="signOut">Sign Out</string>
+    <string name="today">Today</string>
+    <string name="cal">cal</string>
+    <string name="intake">intake</string>
+    <string name="remaining">Remaining</string>
+    <string name="over">Over</string>
+    <string name="qty">Quantity</string>
+    <string name="weight">Weight</string>
+    <string name="height">Height</string>
+    <string name="age">Age</string>
+    <string name="personalInfo">Personal Info</string>
+    <string name="contactInfo">Contact Info</string>
+    <string name="healthInfo">Body Health Info</string>
+    <string name="update">Update</string>
+    <string name="editName">Edit Nickname</string>
+    <string name="editAddress">Edit Address</string>
+    <string name="editHeight">Edit Height</string>
+    <string name="editWeight">Edit Weight</string>
+    <string name="cm">CM</string>
+    <string name="kg">KG</string>
+    <string name="bmi">BMI</string>
+    <string name="ver_activity">Activity version</string>
+    <string name="ver">App version</string>
+    <string name="feedback">Feedback</string>
+    <string name="submit">Submit</string>
+    <string name="changePass">Change Password</string>
+    <string name="currentPass">Current Password</string>
+    <string name="newPass">New Password</string>
+    <string name="policy"><b>Private Policy</b></string>
+    <string name="policyDetail">Any information that is collected via our services is covered by the privacy policy in effect at the time such information is collected. We may revise this privacy policy form time to time. </string>
+    <string name="dietInfo"> x per - </string>
+    <string name="record_setting">Record Setting</string>
+    <string name="record_description">Set your record before continue to next process</string>
+    <string name="button_confirm">Confirm</string>
+    <string name="target_info"><b>Target Info</b></string>
+    <string name="record_activitykcal">Activity Calories(cal)</string>
+    <string name="body_info"><b>Body Info</b></string>
+    <string name="steps">Steps</string>
+    <string name="top">Top 10 List</string>
+    <string name="ready">Get Ready</string>
+    <string name="desc">Description :</string>
+    <string name="letStart">Let Start !!</string>
+    <string name="descHint">What do you want to achieve?</string>
+    <string name="foodIntake">Food Intake(Calories per day) :</string>
+    <string name="activityDuration">Activity Duration (Minutes per day) :</string>
+    <string name="address">Address</string>
+    <string name="mealType">Choose a Meal Type</string>
+
+    <!--Status Msg-->
+    <string name="status_sync">Synchronizing with server</string>
+    <string name="status_checkVer">Checking Update...</string>
+    <string name="status_activity">Downloading Activity Data...</string>
+    <string name="status_loading">Processing...</string>
+    <string name="status_email">Checking Email...</string>
+    <string name="status_forgetPass">Sending Password Recovery Request...</string>
+    <string name="status_login">Downloading user data...</string>
+    <string name="status_loginTitle">Login Success</string>、
+    <string name="status_active">Please check your email to active account</string>
+    <string name="status_loginFail">Invalid Email or Password</string>
+    <string name="status_exit">Press the back button once again to close the application.</string>
+    <string name="status_emailUsed">This Email Address Already Used</string>
+    <string name="status_recovery">The email address is not registered of Fitness Companion account </string>
+    <string name="status_signOut">Are you sure you want to sign out ?</string>
+    <string name="status_ranking">This activity still no people participate</string>
+    <string name="status_delete">Are you sure you want to delete this diet record ?</string>
+    <string name="status_noRecord">No food record found</string>
+    <string name="status_stopActivity">Are you sure you want to end this activity ?</string>
+    <string name="status_save">Exercise record successful</string>
+    <string name="status_noSave">You exercise will not recorded because no calories burn </string>
+    <string name="status_restaurant">Near by no have any restaurant</string>
+    <string name="status_step">You have achieve daily step goal</string>
+    <string name="status_cal">You have achieve daily workout calories burn goal</string>
+    <string name="status_weight">You have achieve weight goal</string>
+
+
+    <!--Success Msg-->
+    <string name="success_signUp">Register Success.\nPlease active your account by email</string>
+    <string name="success_forgetPass">We have sent a new password to your email address</string>
+    <string name="success_update">Update Successful</string>
+    <string name="success_recovery">We have sent a new password to your email address</string>
+    <string name="success_feedback">We are glad to receive your feedback</string>
+    <string name="success_updatePass">Change password success!\nPlease re-login.</string>
+
+    <!--Error Msg-->
+    <string name="error_internet">No Internet Connection</string>
+    <string name="error_required">This Field is Required</string>
+    <string name="error_name">Symbols and Digits Are Not Allow</string>
+    <string name="error_email">Invalid Email Format</string>
+    <string name="error_passSize">Be at least 6 characters</string>
+    <string name="error_passNoMatch">Confirm password did not match</string>
+    <string name="error_passInvalid">Invalid current password</string>
+
+    <!--BMI-->
+    <string name="BMI_title"><b>BMI</b></string>
+    <string name="BMI_underweight">Lower than 18.5</string>
+    <string name="BMI_normalweight">18.5 "-" 24.9</string>
+    <string name="BMI_overweight">25.0 "-" 29.9</string>
+    <string name="BMI_obesity">Greater than 30.0</string>
+
+    <string name="status_title"><b>Weight Status</b></string>
+    <string name="status_underweight">Underweight</string>
+    <string name="status_normalweight">Normal Weight</string>
+    <string name="status_Overweight">Overweight</string>
+    <string name="status_Obesity">Obesity</string>
+
+    <string name="BMI"><b>Body Mass Index :</b></string>
+    <string name="BMI_range">Average range of healthy BMI is 18.5 - 24.9</string>
+
+
+    <!--Array-->
+    <array name="genderArray">
+        <item></item>
+        <item>Male</item>
+        <item>Female</item>
+    </array>
+    <array name="photoArray">
+        <item>Camera</item>
+        <item>Choose from Album</item>
+        <item>Cancel</item>
+    </array>
+    <array name="actionArray">
+        <item>Edit</item>
+        <item>Delete</item>
+        <item>Cancel</item>
+    </array>
+
+    <array name="dietOption">
+        <item>Breakfast</item>
+        <item>Lunch</item>
+        <item>Dinner</item>
+        <item>Other</item>
+    </array>
+
+    <array name="timeLineMode">
+        <item>Step</item>
+        <item>Activity Calories</item>
+    </array>
+    <!--<array name="timeLineOption">
+        <item>Monthly</item>
+        <item>Yearly</item>
+    </array>-->
+
+    <array name="monthArray">
+        <item>Jan</item>
+        <item>Feb</item>
+        <item>Mar</item>
+        <item>Apr</item>
+        <item>May</item>
+        <item>Jun</item>
+        <item>Jul</item>
+        <item>Aug</item>
+        <item>Sep</item>
+        <item>Oct</item>
+        <item>Nov</item>
+        <item>Dec</item>
+    </array>
+
+    <!-- Array Menu -->
+    <!--<array name="menu_profile">
+        <item>Achievement</item>
+        <item>Reminder</item>
+        <item>Ranking</item>
+        <item>Timeline</item>
+        <item>Setting</item>
+    </array>-->
+
+    <array name="menu_home">
+        <item>BMI</item>
+        <item>Goals</item>
+        <item>Activity Plan</item>
+        <!--<item>Diet Plan</item>-->
+    </array>
+    <array name="menu_profile">
+        <item>Achievement</item>
+        <item>Ranking</item>
+        <item>Reminder</item>
+        <item>Graph</item>
+        <item>Setting</item>
+    </array>
+
+    <array name="menu_setting">
+        <item>Change Password</item>
+        <item>About Us</item>
+        <item>Sign Out</item>
+    </array>
+
+    <array name="array_bmi">
+        <item>Underweight</item>
+        <item>Normal Weight</item>
+        <item>Overweight</item>
+        <item>Obesity</item>
+    </array>
+
+    <array name="bmi_status">
+        <item>
+            <b>You are underweight\nYou should gain more weight</b>
+        </item>
+        <item>
+            <b>Well Done!\nYou are in healthy range</b>
+        </item>
+        <item>
+            <b>Oh Dear!\nYou are overweight\nPlease reduce your weight</b>
+        </item>
+    </array>
+
+    <!--Reminder-->
+    <string name="reminder">Reminder</string>
+    <string name="editAlarm">Edit Alarm</string>
+
+    <string name="alarmdetail">Attention!\nTime to do some activity.</string>
+    <string name="alarmtitle">Alarm Title:\n</string>
+    <string name="enable">[Enable]</string>
+
+    <string-array name="occurence">
+        <item>Once</item>
+        <item>Weekly</item>
+    </string-array>
+
+    <string-array name="pref_alarm_play_time_entries">
+        <item>10 seconds</item>
+        <item>30 seconds</item>
+        <item>1 minute</item>
+        <item>2 minutes</item>
+        <item>3 minutes</item>
+        <item>5 minutes</item>
+    </string-array>
+
+    <string-array name="pref_alarm_play_time_values">
+        <item>10</item>
+        <item>30</item>
+        <item>60</item>
+        <item>120</item>
+        <item>180</item>
+        <item>300</item>
+    </string-array>
+
+
+    <string name="title_activity_search_food">SearchFoodActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fab_Upload">Upload Food Image</string>
+    <string name="title_activity_food_image_fragment">FoodImageFragment</string>
+    <string name="tab_text_1">Food Calories</string>
+    <string name="tab_text_2">Food Images</string>
+    <string name="title_activity_food_image">FoodImage</string>
+
+    <!-- running tracking gps -->
+    <string name="title_activity_maps">Map</string>
+    <string name="default_info_title">Default Location</string>
+    <string name="map_frag_cont_desc">Sample map view</string>
+    <string name="title_activity_journal">My Activity</string>
+
+    <string name="runStartBtnText">START</string>
+    <string name="journalBtnText">HISTORY</string>
+    <string name="runStopBtnText">STOP</string>
+
+    <string name="distanceTextView">Distance</string>
+    <string name="timeTextView">Time</string>
+    <string name="avgPaceTextView">Average Pace</string>
+    <string name="dateDetailTV">Date</string>
+    <string name="PAUSE">PAUSE</string>
+
+
+</resources>

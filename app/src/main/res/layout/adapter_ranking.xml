@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:textColor="#000000"
+        android:id="@+id/txtNum"
+        android:textSize="18pt"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textColor="#000000"
+        android:id="@+id/txtName"
+        android:textSize="18pt"
+        android:layout_toRightOf="@id/txtNum"
+        android:text="Haha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textColor="#000000"
+        android:textStyle="italic"
+        android:id="@+id/txtCal"
+        android:textSize="18pt"
+        android:layout_alignParentRight="true"
+        android:text="Cal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

@@ -1,0 +1,280 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDashboardDark"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="fitnesscompanion.com.View.Home.HomeFragment">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:paddingTop="8dp">
+
+        <fitnesscompanion.com.Util.DashedCircularProgress
+            android:id="@+id/stepProgress"
+            android:layout_width="270dp"
+            android:layout_height="270dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            custom:base_color="#260b49"
+            custom:duration="1500"
+            custom:external_color="#ff39065a"
+            custom:progress_color="@color/abc_primary_text_material_dark"
+            custom:progress_icon="@drawable/steps"
+            custom:progress_stroke_width="96">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/viewsteps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="10dp"
+                    android:text="@string/steps"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="10dp"
+                    android:textColor="#ff39065a"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtStep"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtTitle"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="10dp"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="18pt" />
+
+            </RelativeLayout>
+
+
+        </fitnesscompanion.com.Util.DashedCircularProgress>
+
+
+        <LinearLayout
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="8dp">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:elevation="2dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:padding="12dp"
+                android:id="@+id/runningMap">
+
+                <ImageView
+                    android:id="@+id/imgv_start_training"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/circle"
+                    android:src="@drawable/ic_dash_play" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/imgv_start_training"
+                    android:layout_toRightOf="@+id/imgv_start_training"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Quick Start Training"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:clickable="true"
+                android:elevation="2dp"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:padding="12dp"
+                android:id="@+id/newsfeed">
+
+                <ImageView
+                    android:id="@+id/imgv_next_training"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/circle"
+                    android:backgroundTint="@color/colorDashboardNextWorkout"
+                    android:src="@drawable/ic_dash_next"
+                    android:padding="6dp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/imgv_next_training"
+                    android:layout_toRightOf="@+id/imgv_next_training"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="News Feed "
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="8dp">
+
+            <RelativeLayout
+                android:id="@+id/bmistatistic"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:clickable="true"
+                android:elevation="2dp"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:padding="12dp">
+
+                <ImageView
+                    android:id="@+id/imgv_stats"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/circle"
+                    android:backgroundTint="@color/colorDashboardStats"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_dash_stats" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/imgv_stats"
+                    android:layout_toRightOf="@+id/imgv_stats"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/bmiStats"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="BMI Statistics"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/assignActivity"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:clickable="true"
+                android:elevation="2dp"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:padding="12dp">
+
+                <ImageView
+                    android:id="@+id/imgv_calendar"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/circle"
+                    android:backgroundTint="@color/colorDashboardCalendar"
+                    android:padding="6dp"
+                    android:src="@drawable/ic_dash_calendar" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/imgv_calendar"
+                    android:layout_toRightOf="@+id/imgv_calendar"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Assigned Activity Plan"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

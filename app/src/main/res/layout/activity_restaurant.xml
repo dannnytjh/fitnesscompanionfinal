@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDashboardDark"
+    tools:context="fitnesscompanion.com.View.Food.RestaurantActivity">
+
+    <ExpandableListView
+        android:id="@+id/expandableList"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.github.clans.fab.FloatingActionButton
+        android:onClick="onNearBy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_gps"
+        android:layout_margin="20dp"
+        fab:fab_colorNormal="@color/colorBlueNormal"
+        fab:fab_colorPressed="@color/colorBluePressed"
+        fab:fab_colorRipple="@color/colorBlueRipple"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>

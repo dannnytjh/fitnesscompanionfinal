@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Second Layout - After run starts, displays data-->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/runStopBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/runStopBtnText"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/colorNotSelected"
+        android:background="@color/colorWhite"
+        android:textSize="20sp"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/runPauseBtn"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="80dp" />
+
+    <Button
+        android:id="@+id/runPauseBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/PAUSE"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/colorNotSelected"
+        android:background="@color/colorWhite"
+        android:textSize="20sp"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/runStopBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="20dp" />
+
+    <TextView
+        android:id="@+id/distanceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/timeTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/distanceTextView"
+        android:textAlignment="center"
+        android:textColor="@color/colorNotSelected"
+        android:elevation="10dp"
+        android:textSize="20sp"
+        android:background="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeTextView" />
+
+    <TextView
+        android:id="@+id/timeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/avgPaceTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/timeTextView"
+        android:textAlignment="center"
+        android:textColor="@color/colorNotSelected"
+        android:elevation="10dp"
+        android:textSize="20sp"
+        android:background="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/avgPaceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/avgPaceTextView"
+        android:textAlignment="center"
+        android:textColor="@color/colorNotSelected"
+        android:elevation="10dp"
+        android:textSize="20sp"
+        android:background="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/distanceTextView"
+        android:layout_alignParentLeft="true" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

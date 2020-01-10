@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorSkyBlue">#9ae6e0</color>
+    <color name="colorRed">#fbed0609</color>
+    <color name="colorDarkBlue">#479aa9</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBackground">#DCEDC8</color>
+
+<!--    //navigation bar-->
+    <color name="lightGreyOpacity">#70959DAD</color>
+    <color name="navblue">#3F51B5</color>
+    <!-- Floating Action Menu -->
+
+    <color name="colorBlueNormal">#1565C0</color>
+    <color name="colorBluePressed">#2272CD</color>
+    <color name="colorBlueRipple">#62B2FF</color>
+
+    <!--Reminder-->
+    <color name="black">#0a0909</color>
+    <color name="white">#0a0909</color>
+    <color name="green">#00ff00</color>
+    <color name="blue">#0000ff</color>
+    <color name="light_grey">#aaaaaa</color>
+    <color name="grey">#888888</color>
+    <color name="dark_grey">#555555</color>
+
+    <color name="actionBar_color">#479AA9</color>
+    <color name="alarm_title_active">#0e0e0e</color>
+    <color name="alarm_title_outdated">#635a5a</color>
+    <color name="alarm_detail">#f4eeee</color>
+
+    //new color
+    <color name="colorAccentDark">#e6af29</color>
+    <color name="colorNotSelected">#686868</color>
+    <color name="colorMuscleCards">#12355b</color>
+
+    <color name="colorDashboardPrimary">#ffffffff</color>
+    <color name="colorDashboardDark">#f2f2f2</color>
+    <color name="colorDashboardTrans">#80111111</color>
+
+    <color name="colorDashboardSubtitle">#aeaeae</color>
+    <color name="colorDashboardNextWorkout">#5c6bc0</color>
+    <color name="colorDashboardStats">#e57373</color>
+    <color name="colorDashboardCalendar">#8bc34a</color>
+
+    <color name="colorActiveTextButtonBlue">#297fd5</color>
+
+    <color name="colorNumberPickerSelected">#e9ce2c</color>
+
+    <color name="colorNavChipsAccent">#ff718d</color>
+    <color name="colorNavChipsNotSelected">#8f8f8f</color>
+
+    <color name="colorTabUnselected">#9FFFFFFF</color>
+
+    <color name="colorNewBest">#D32F2F</color>
+
+    <color name="Violet">#aa00fc</color>
+    <color name="Black">#000000</color>
+    <color name="White">#ffffff</color>
+    <color name="BrightGreen">#52fc00</color>
+    <color name="Gold">#ffc200</color>
+    <color name="Blue">#003dff</color>
+    <color name="LightGray">#dcdcdc</color>
+    <color name="Red">#ff4000</color>
+    <color name="YellowOrange">#ffc927</color>
+    <color name="SlateGray">#56636f</color>
+
+</resources>

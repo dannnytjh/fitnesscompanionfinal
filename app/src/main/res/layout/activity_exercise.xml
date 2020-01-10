@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDashboardDark"
+    tools:context="fitnesscompanion.com.View.Activity.ExerciseActivity">
+
+    <ImageView
+        android:id="@id/imageView"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:textSize="40pt"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_burn"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+        <TextView
+            android:id="@+id/txtCalories"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="18pt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="@string/cal"
+            android:layout_gravity="center_vertical"
+            android:textSize="18pt"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+
+        <ImageButton
+            android:id="@+id/btnControl"
+            android:onClick="onClick"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="20dp"
+            android:drawingCacheQuality="high"
+            android:background="@null"
+            app:srcCompat="@drawable/ic_pause"
+            android:layout_weight="0.64" />
+
+
+        <ImageButton
+            android:onClick="onEnd"
+            app:srcCompat="@drawable/ic_stop"
+            android:background="@null"
+            android:drawingCacheQuality="high"
+            android:layout_marginLeft="20dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+
+    </LinearLayout>
+
+    <com.github.anastr.speedviewlib.AwesomeSpeedometer
+        android:id="@+id/awesomeSpeedometer"
+        android:layout_width="141dp"
+        android:layout_height="124dp"
+
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="220dp" />
+</LinearLayout>
